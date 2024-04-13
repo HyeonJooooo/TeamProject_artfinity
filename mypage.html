@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfinity</title>
+    <link rel="stylesheet" href="css/mypage.css">
+</head>
+<body>
+    <!-- 기본ui -->
+    <nav>
+        <div class="logo">Art🖍️finity</div>
+        <div class="nav-items">
+          <a href="/projects">프로젝트</a>
+          <a href="/wallpapers">배경화면</a>
+          <a href="/creators">크리에이터</a>
+        </div>
+        <div class="nav-right">
+          <input type="search" placeholder="검색">
+          <a href="/mypage"><img src="image/dog.png" alt="마이페이지"></a>
+        </div>
+      </nav>
+
+      <!-- 유저상태바 -->
+      <div class="usercontainer">
+        <section1 class="User">
+          
+          <div class="userimage">
+          </div>
+          <div class="username">
+            <h2 >
+              UserName
+            </h2>
+            <button type="button" value="a" id="Rename">기본정보 수정</button>   
+          </div>
+        </section1>
+        
+        <section2 class="like">
+          <h2>0<br>
+            좋아요</h2>
+            <div class="line"></div>
+          <h2>0<br>
+            조회수</h2>
+        </section>
+      </div>      
+      
+      <!-- tap -->
+      <section3 class="usertap">
+        <div class="menu_bar">
+          <button type="button" id="default" class="tab" onclick="openMenu('tab1', this)">업로드한 프로젝트</button>
+          <button type="button" class="tab" onclick="openMenu('tab2', this)">무드보드</button>
+        </div>
+      </section>
+
+      <!-- 업로드프로젝트 -->
+      <section4>
+        <div id="tap1" class="content">
+          <div id="gird-container">
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+            <div class="gird-item"><img src="image/dog.png" alt=""></div>
+        </div>
+      </section4>
+
+      <!-- 무드보드 -->
+      <section4>
+        <div id="tap2" class="content">
+          <div class="gird-container">
+            <div class="gird-item"><img src="" alt=""></div>
+            <div class="gird-item"><img src="" alt=""></div>
+            <div class="gird-item"><img src="" alt=""></div>
+            <div class="gird-item"><img src="" alt=""></div>
+        </div>
+      </section4>
+</body>
+</html>
