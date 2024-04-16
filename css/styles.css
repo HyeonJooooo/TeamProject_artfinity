@@ -1,0 +1,190 @@
+@font-face {
+font-family: 'GangwonEduSaeeum_OTFMediumA';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Pretendard-Regular';
+src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+font-weight: 400;
+font-style: normal;
+}
+
+body{
+    width :500px;
+    height: 70vh;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* 메뉴 스크롤 */
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: rgb(218, 198, 185);
+    height: auto;
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-track {
+    background-color: #e7e7e7;
+}
+
+/* 장바구니 스크롤 */
+.cart::-webkit-scrollbar {
+    width: 10px;
+}
+.cart::-webkit-scrollbar-thumb {
+    background-color: rgb(218, 198, 185);
+    height: auto;
+    border-radius: 10px;
+}
+.cart::-webkit-scrollbar-track {
+    background-color: #e7e7e7;
+}
+
+.background1 {
+    background-color: #f7f4eb;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f4eb;
+}
+
+.header {
+    background: rgb(218, 198, 185);
+    color: rgb(49, 46, 46);
+    padding-top: 7px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+}
+
+.tab {
+    background-color: rgb(218, 198, 185);
+    color: rgb(49, 46, 46);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    width: 20%;
+    font-family: 'Pretendard-Regular';
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5 {
+    font-weight: bold;
+    height: 550px;
+}
+
+.tab:hover {
+    background-color: #f7f4eb;
+}
+
+/* 메뉴창 */
+.content { 
+    font-family: 'Pretendard-Regular';
+    display: grid;
+    text-align: center;
+    overflow: auto;
+    padding: 10px;
+}
+
+.content div {
+    text-align: center;
+    font-size: 13px;
+    width: 130px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    display: inline-block;
+}
+
+.content img {
+    width:130px;
+    height: auto;
+    
+}
+
+.cart {
+    width: 290px;
+    height: 25vh;
+    background-color: white;
+    border: 5px solid #f7f4eb;
+    font-family: 'Pretendard-Regular';
+    overflow: auto;
+}
+
+.pay {
+    display: flex;
+}
+.pay-button > div {
+    flex: 1;
+}
+.pay-button button:hover {
+    opacity: 0.8;
+}
+
+.pay-button {
+    width: 200px;
+    background-color: #f7f4eb;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular';
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pay-button button {
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    font-family: 'Pretendard-Regular';
+}
+
+.pay-button button[type="del-btn"] { /* 삭제버튼 */
+    background-color: rgb(255, 83, 83);
+    color: rgb(0, 0, 0);
+    width: 180px;
+    height: 70px;
+    position: sticky;
+    left: 110px;
+    margin-bottom: 5px;
+}
+
+.pay-button button[type="pay-btn"] { /* 결제버튼 */
+    background-color: rgb(172, 172, 172);
+    color: rgb(0, 0, 0);
+    width:180px;
+    height: 70px;
+}
+
+.total-container { /* 총 결제금액 */
+    display: flex;
+    align-items: center;
+}
+
+.total-container p {
+    margin-right: 20px;
+}
+
+#total {
+    color: red;
+    font-size: large;
+}
+

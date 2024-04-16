@@ -27,30 +27,40 @@
         <div class="line"></div>
       </div>
       <div class="changebody">
+
         <form action="" method="post">
+
           <div class="userimg">
-            <img src="image/dog.png" alt="">
-          </div>       
+            <input type="file" id="fileInput" style="display: none;" onchange="changeimg(event)">
+            <label for="fileInput">
+              <img id="previewImg" src="image/dog.png" alt="">
+              <div id="overlay">변경하기</div>
+            </label>
+          </div>     
+
           <div class="changeBox">
-            <label for="nickname">닉네임</label><br>
+            <label for="nickname" id="nickname">닉네임</label><br>
             <input type="text" name="name" id="username" placeholder="Name">
             <br>
-            <label for="nickname">이메일</label><br>
+            <label for="Email" id="email">이메일</label><br>
             <input type="text" name="email" id="userEmail" placeholder="Email">
             <br>
-            <label for="nickname">전화번호</label><br>
+            <label for="phone">전화번호</label><br>
             <input type="text" name="phone" id="userphone" placeholder="Phone">
             <br>
-            <label for="nickname">비밀번호</label><br>
+            <label for="password">비밀번호</label><br>
             <input type="text" name="password" id="userPs" placeholder="Password">
             <br>
-            <label for="nickname">비밀번호 확인</label><br>
+            <label for="checkpassword" id="ckpw">비밀번호 확인</label><br>
             <input type="text" name="ckpassowrd" id="userpscheck" placeholder="Password확인">
           </div>
+
           <button type="submit">정보변경</button>
+
         </form>
+
       </div>
       <div class="lastLine"></div>
-
+<script src="js/Changin.js"></script>
 </body>
 </html>

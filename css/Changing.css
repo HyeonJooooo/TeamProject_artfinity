@@ -60,6 +60,10 @@ nav {
     height: 67px;
 }
 
+
+/* 메인 */
+
+
 .header h2{
     margin-top: 40px;
     margin-left: 250px;
@@ -75,13 +79,76 @@ nav {
    margin-top : 30px;
    text-align: center;
 }
-.userimg img{
+
+.userimg {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #fileInput {
+    display: none;
+  }
+  
+  #previewImg {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-}
+    cursor: pointer;
+    margin-bottom: 50px;
+  }
+  
+  #overlay {
+    position: absolute;
+    top: calc(50% - 18px); /* 중앙 정렬을 위해 높이의 절반에서 텍스트 높이의 절반을 뺍니다. */
+    left: calc(50% - 50px); 
+    width: 100px; /* 텍스트의 너비 설정 */
+    height: 36px; /* 텍스*/
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+   
+  }
+  
+  .userimg:hover #overlay {
+    opacity: 1;
+  }
+  
+
 .changeBox{
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.changeBox label{
+    font-size : 20px;
+    padding-right: 320px;
+}
+#nickname, #email{
+    padding-right: 340px;
+}
+#ckpw{
+    padding-right: 280px;
+}
+#nickname{
+    margin-top: 1;
+}
+.changeBox input[type=text]{
+    width: 400px;
+    height: 43px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top : 3px;
+    margin-bottom: 15px;
+}
+.changeBox input[type=text]::placeholder{
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    padding:  0.5em;
+    
 }
 .lastLine{
     width: 80%;
@@ -89,5 +156,19 @@ nav {
     background-color: black;
     display: flex;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 50px;
+    
+}
+button[type=submit]{
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+    padding: 0.5em;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin-left: 1200px;
+    position: relative;
+    
 }
