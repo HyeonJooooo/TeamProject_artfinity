@@ -134,7 +134,7 @@ nav {
     padding-right: 280px;
 }
 #nickname{
-    margin-top: 1;
+    margin-top: 1px;
 }
 .changeBox input[type=text]{
     width: 400px;

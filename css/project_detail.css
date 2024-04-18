@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    min-width: 1000px;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Pretendard-Regular';
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: white;
+}
+.logo {
+    font-family: 'KCCChassam';
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 40px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+}
+.title_label{
+    width: 100%;
+    height: 150px;
+    background-color: #D8E1EA;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+.title_label a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    color: #5F6367;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title_label p{
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -150%);
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+}
+
+.sticky-nav {
+    position: fixed; /* 스크롤과 상관없이 항상 같은 위치에 고정 */
+    top: 50%; /* 상하 중앙에 위치시킴 */
+    right: 90px; /* 우측에 고정 */
+    transform: translateY(-50%); /* Y축 기준으로 50%만큼 올려 상하 중앙 정렬 */
+    width: 94px;
+    height: 306px;
+    margin-right: 10px; /* 필요한 경우 우측의 여백을 위해 설정 */
+  }
+  
+  .sticky-nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 306px;
+    background-color: #D8E1EA;
+    border-radius: 36px;
+  }
+
+  .sticky-nav-content img{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .sticky-nav-link-mypage img{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin: 25px 9px 0 9px;
+  }
+  .sticky-nav-content .heart{
+    margin: 40px 20px;
+  }
+  .sticky-nav-content .chat{
+    margin: 0 20px 25px 20px;
+  }
+.sticky-nav-link .sticky-nav-link-mypage{
+    background: none;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contents-container {
+    margin: 0 auto;
+    max-width: 60%;
+}
+.contents-container p{
+    padding: 75px;
+}
+.detail{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.detail_content{
+    display: flex;
+    padding: 0;
+}
+.detail_content span{
+    margin-left: 5px;
+}
+.detail img{
+    width: 30px;
+    height: 30px;
+}
+.icon-view, .icon-heart, .icon-comment{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    color: #82878C;
+}
+.chat{
+    width: 80%;
+    margin: 0 auto;
+}
+hr{
+    margin: 20px 0;
+}
+.chatBox{
+    display: flex;
+}
+.userImg img{
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+}
+.userChat{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 100%;
+}
+.userName {
+    margin: auto 0;
+    font-weight: bold;
+}
+.chatContent{
+    margin: auto 0;
+
+}
+.chatContent input{
+    height: 30px;
+    width: 100%;
+    padding: 0.5em;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+.chatContent input:focus{
+    outline: none;
+}
+.chatDate{
+    margin: auto 0 auto auto;
+}
+.chatBtn{
+    margin: auto 0 auto 60px;
+}
+.chatBtn input[type="submit"]{
+    background-color: #D8E1EA;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 10px;
+}
+
+.footer{
+    height: 100px;
+}
