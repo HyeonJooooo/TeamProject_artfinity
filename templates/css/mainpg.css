@@ -1,0 +1,89 @@
+    .event {
+        width: fit-content;
+        height: 320px;
+    } 
+
+    .topten {
+        padding: 20px;
+        background-color: white;}
+
+    ul { list-style: none;}
+
+    .title-txt {
+        padding: 10px;
+        margin-left: 120px;
+        font-weight: 700px;
+        display: flex;
+    }
+   
+    .title-txt>p {
+        padding: 0;
+        margin: 30px;
+    }   
+
+    .topc {
+        display: flex;
+        flex-wrap: nowrap; /* 아이템이 한 줄로 나타나도록 설정 */
+        justify-content: space-around; /* 요소들을 가운데 정렬하고 주위에 공간을 균등하게 배분 */
+        padding: 0; /* 기본 패딩 제거 */
+        margin-left: 120px; /* 왼쪽 여백 설정 */
+        margin-right: 120px;
+    }
+    
+    .topc li {
+        flex: 0 0 auto; /* 아이템이 자동으로 너비를 설정하도록 변경 */
+        /* margin-right: 24.47px;  오른쪽 여백 설정 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+    }
+    
+    .creator-profile {
+        width: 97.87px; /* default 프로필 이미지 너비 설정 */
+        height: 95.74px; /* default 프로필 이미지 높이 설정 */
+        background-color: rgb(211, 211, 211); /* 테스트용으로 배경 설정 */
+        border-radius: 50%; /* 프로필 이미지를 원 형태로 만들기 위해 반지름 설정 */
+        margin: 0 24.47px 7px; /* 프로필 이미지 아래 여백 추가 */
+    }
+    
+    .creator-profile>img {
+        width :97.87px; /* 프로필 이미지 너비 설정 */
+        height: 95.74px; /* 프로필 이미지 높이 설정 */
+        border-radius: 50%;
+    }
+    .nickname {
+        margin-top: 17.02px;
+        border-radius: 15px;
+        width: 98px;
+        height: 47px;
+        border: 1px solid gainsboro;
+    }
+
+    .content {
+        display: grid;
+        place-items: center; /* 중앙 정렬 */
+        margin-top: 91px; /* 마진 top */
+        margin-bottom: 50px; /* 임시 바텀 마진 */
+        margin-left: 31px;
+        margin-right: 31px;
+        padding: 0 20px;
+    }
+
+    #grid-container > a > img {
+        width: 320px; /* 이미지 고정 너비 */
+        height: 240px; /* 이미지 고정 높이 */
+        border-radius: 15px;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: repeat(5,1fr); /* 5열 그리드 배치*/
+        gap: 30px;
+        padding: 30px;
+        cursor: default;
+    }
+
+    #grid-container a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        

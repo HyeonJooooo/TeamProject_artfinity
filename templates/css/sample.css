@@ -24,56 +24,38 @@ nav {
     background-color: white;
 }
 .logo {
-    margin: auto;
     font-family: 'KCCChassam';
     font-weight: bold;
     font-size: 1.5em;
+    margin-right: 40px;
 }
-.content-box{
+.nav-items{
     display: flex;
-    flex-direction: column;
-    width: 442px;
-    height: 600px;
-    background-color: white;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 100px;
-}
-.title{
-    margin: 30px auto 30px auto;
-    font-size: 1.8em;
-}
-.content-box form{
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    margin-left: 0;
+    padding: 0;
 }
-input{
-    width: 226px;
-    height: 49px;
-    border-radius: 10px;
-    background-color: #F1F4F7;
-    border-style: none;
-    margin-bottom: 20px;
-}
-input[type="email"], input[type="password"], input[type="phone"] {
-    padding-left: 17px;
-    font-size: 18px;
-    color: #ADB4BB;
-}
-input::placeholder{
-    color: #ADB4BB;
-}
-input:focus {
-    outline: none;
-}
-.signup-btn{
-    width: 200px;
-    background-color: #D8E1EA;
-    font-size: 18px;
+.nav-items a {
+    margin: 0;
+    padding-right: 40px;
+    font-size: 1.2em;
+    text-decoration: none;
     color: black;
-    margin-bottom: 0;
 }
-.signup-btn:hover {
-    background-color: #ADB4BB;
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
+.nav-right input[type="search"] {
+    margin-right: 50px;
+    padding: 0.5em;
+    border: none;
+    border-radius: 10px;
+    border: 2px solid #D8E1EA;
+}
+.nav-right img {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+  }
