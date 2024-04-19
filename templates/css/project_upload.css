@@ -12,7 +12,7 @@
 }
 
 body{
-    min-width: 1000px;
+    min-width: 1200px;
     margin: 0;
     background-color: #D8E1EA;
     font-family: 'Pretendard-Regular';
@@ -26,27 +26,35 @@ body{
     display: flex;
     flex-direction: column;
     margin: 20px 30px;
+    min-width: 1200px;
 }
 
 .title-input, .category {
     display: flex;
     align-items: center;
     margin-bottom: 3px;
+    min-width: 1200px;
 }
 
-.title-input h3, .category h3 {
+.title-input h3 {
     width: 150px;
     margin-right: 15px;
 }
 
+.category h3 {
+    width: 110px;
+}
+
+
 input[type="text"] {
     padding: 15px;
+    margin-right: 20px;
     border: 2px solid #D8E1EA;
     border-radius: 10px;
 }
 
 input[type="text"][placeholder="제목"] {
-    width: 1000px;
+    width: 100%;
 }
 
 input::placeholder {
@@ -71,8 +79,8 @@ input[type="text"]:focus {
 }
 
 .radio-buttons input[type="radio"] {
-    margin-right: 8px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 40px;
     margin-bottom: 5px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -81,7 +89,7 @@ input[type="text"]:focus {
     height: 18px;
     border-radius: 50%;
     outline: none;
-    border: 2px solid #D8E1EA; 
+    border: 2px solid #D8E1EA;
     cursor: pointer;
     vertical-align: 3px;
 }
@@ -99,6 +107,7 @@ input[type="text"]:focus {
     display: flex;
     align-items: center;
     margin: 20px 30px;
+    min-width: 1200px;
 }
 
 .toggle-slide h3 {
@@ -133,7 +142,7 @@ input[type="text"]:focus {
 }
 
 .toggle input[type="checkbox"]:checked + label {
-    transform: translateX(29px); /* 토글이 이동하는 정확한 거리에 따라 값 조정 */
+    transform: translateX(29px);
 }
 
 
@@ -155,6 +164,19 @@ input[type="text"]:focus {
     padding: 20px;
     height: 120px; /* 150 */
 }
+
+.text-file textarea {
+    padding: 20px 30px;
+    border: 2px solid #D8E1EA;
+    border-radius: 15px;
+    font-family: 'Pretendard-Regular';
+}
+
+.text-file textarea:focus {
+    border-color: #ADB4BB;
+    outline: none;
+}
+
 
 .text-file img {
     width: 40px;
@@ -182,12 +204,17 @@ input[type="text"]:focus {
     border-radius: 10px;
     width: 350px;
 }
+.textInput {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
 
 /* save-button 저장, 취소*/
 .save-button {
     display: flex;
     justify-content: center;
     margin-top: 26px;
+    min-width: 1200px;
 }
 
 .cancle, .save {
