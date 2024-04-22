@@ -148,6 +148,19 @@ nav {
     font-family: 'Pretendard-Regular';
     font-size: 15px;
     padding:  0.5em;
+}
+.changeBox input[type=password]{
+    width: 400px;
+    height: 43px;
+    border-style: none;
+    border-radius: 10px;
+    margin-top : 3px;
+    margin-bottom: 15px;
+}
+.changeBox input[type=password]::placeholder{
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    padding:  0.5em;
     
 }
 .lastLine{

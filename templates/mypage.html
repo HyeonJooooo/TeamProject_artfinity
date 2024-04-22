@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,11 +33,13 @@
             <h2 >
               UserName
             </h2>
-            <button type="button" onclick="location.href='Changing.html'" value="a" id="Rename">기본정보 수정</button>   
+            <form action="Changing" method="get">
+            <button type="submit" value="a" id="Rename">기본정보 수정</button>
+            </form>
           </div>
         </section1>
         
-        <section2 class="like">
+        <section class="like">
           <h2>0<br>
             좋아요</h2>
             <div class="line"></div>
@@ -47,7 +49,7 @@
       </div>      
       
       <!-- tap -->
-      <section3 class="usertap">
+      <section class="usertap">
         <div class="menu_bar">
           <button type="button" id="default" class="tab" onclick="Menu('tab1', this)">업로드한 프로젝트</button>
           <button type="button" class="tab" onclick="Menu('tab2', this)">무드보드</button>
