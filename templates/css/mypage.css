@@ -11,7 +11,7 @@
     font-style: normal;
 }
 body{
-    min-width: 1000px;
+    min-width: 100%;
     margin: 0;
     background-color: #D8E1EA;
     font-family: 'Pretendard-Regular';
@@ -91,7 +91,7 @@ nav {
     font-family: 'Pretendard-Regular';
 }
 
-.username button[type=button]{
+.username button[type=submit]{
     display: flex;
     position: absolute;
     top: 100px;
@@ -103,15 +103,15 @@ nav {
     font-size: 20px;
     width: 140px;
     cursor: pointer;
+    left: 0;
 }
 .like{
     display: flex;
     margin-top : 80px;
     text-align: center;
     font-family: 'Pretendard-Regular';
-   
     position: absolute;
-    left : 1600px;
+    right : 10%;
 }
 .line{
     width: 2px;
@@ -142,6 +142,9 @@ nav {
     width: 350px;
     
 }
+.incontent{
+    margin : 0;
+}
 
 .incontent > a >img{
     width :273px;
@@ -153,10 +156,9 @@ nav {
 #grid-container{
     display: grid;
     grid-template-columns : repeat(5, 1fr);
-    grid-gap: 0; 
     margin-left: 80px;
     margin-top: 60px;
-    justify-content:space-between;
+    justify-content:center;
     align-content: center;
     
 }
@@ -167,8 +169,8 @@ nav {
 /* 팝업 */
 .content-nav{
     position: absolute;
-    top: 20px;
-    right: 100px;
+    margin-top: 15px;
+    right: 28%;
     z-index: 1;
 }
 
@@ -223,8 +225,11 @@ nav {
 .grid-nav>img{  
     width: 20px;
     height: 20px;
-    cursor: pointer;
+    position: absolute;
+    margin-top: 0;
+    right: 1%;
 }
+
 .gridgroup{
     position: relative;
     
@@ -272,7 +277,8 @@ nav {
 
   .mboardtitle {
     position: absolute;
-    top: 1%;
+    margin-top: 0;
+    /* top: 0.5%; */
     left: 20px;
     font-size: 24px;
     color: white;
@@ -283,7 +289,7 @@ nav {
 .menu {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     width: 80px;
     height: 100px;
